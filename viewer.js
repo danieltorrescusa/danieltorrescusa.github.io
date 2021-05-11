@@ -1019,7 +1019,6 @@ const PDFViewerApplication = {
     const parameters = Object.create(null);
 
     if (typeof file === "string") {
-      this.setTitleUsingUrl(file);
       parameters.url = file;
     } else if (file && "byteLength" in file) {
       parameters.data = file;
